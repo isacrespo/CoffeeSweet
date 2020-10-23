@@ -1,0 +1,548 @@
+/*  Reseteamos los estilos propios de cada navegador */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6,*/
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* Reset para navegadores anteriores */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Empieza nuestro CSS */
+/* Diseñamos Mobile First */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  background: #f4f4d9;
+  color: #2d211f;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: "Roboto Slab", serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Estilos Logo */
+.logo img {
+  max-width: 180px;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+/* Estilos Menú */
+.navegacion {
+  float: right;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: -10px;
+  text-align: center;
+}
+
+.navegacion a {
+  display: block;
+  text-decoration: none;
+  color: #f5f0ed;
+  background-color: #d03b40;
+}
+
+.lanzador-menu {
+  text-decoration: none;
+  color: #f5f0ed;
+  padding: 10px 10px 5px 10px;
+  background-color: #d03b40;
+  border-radius: 3px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+/* Estilos Header */
+.header-navegacion {
+  text-align: center;
+  color: #f5f0ed;
+  background: url("../img/Fondo1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 700px;
+}
+
+.header-navegacion h1,
+.ofertas h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding-top: 5em;
+}
+
+.header-navegacion p,
+.ofertas p {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.header-navegacion hr,
+.ofertas hr {
+  width: 100px;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+/* Estilos Productos */
+.productos-doscolumnas,
+.contacto-doscolumnas {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+
+  text-align: center;
+}
+
+.productos-doscolumnas div,
+.contacto-doscolumnas div {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+.productos-doscolumnas h2,
+.contacto-doscolumnas h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding-bottom: 0.5em;
+}
+
+.productos-doscolumnas p,
+.contacto-doscolumnas p {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.productos-brunch {
+  background-color: #d03b40;
+  color: #ded6c0;
+}
+
+.productos-fiestas {
+  color: #d03b40;
+}
+
+/* Estilos Ofertas */
+.ofertas {
+  text-align: center;
+  color: #f5f0ed;
+  background: url("../img/Fondo3.jpg") no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  background-position: 0 50%;
+  background-attachment: fixed;
+}
+
+.boton {
+  border: 1px #f5f0ed solid;
+  color: #f5f0ed;
+  padding: 1em;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-top: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  transition-duration: 0.4s;
+}
+
+.boton:hover {
+  background-color: #f5f0ed;
+  color: #241d1b;
+}
+
+/* Estilos Reservas */
+.reservas-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  background-color: #f5f0ed;
+}
+
+.grid-item {
+  padding-top: 20px;
+}
+
+.grid-item-imagen {
+  text-align: center;
+  padding-right: 9rem;
+}
+
+.grid-item-imagen img.superior:hover {
+  opacity: 0;
+}
+
+.grid-item-imagen img {
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.grid-item-texto {
+  padding-left: 20px;
+  padding-top: 180px;
+  text-align: left;
+}
+
+.grid-item-texto h3 {
+  font-size: 1.5rem;
+}
+
+.grid-item-texto p {
+  display: block;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+/* Estilos Contacto */
+.contacto-email {
+  color: #d03b40;
+}
+
+.contacto-email a {
+  color: #d03b40;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacto-direccion {
+  color: #ded6c0;
+  background: url("../img/FondoContacto.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+/* Animación que hace crecer el texto de la dirección */
+@keyframes crecimiento {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.contacto-direccion p {
+  animation: crecimiento 5s infinite;
+  transform-origin: center;
+}
+
+/* Estilos Footer */
+.fa-behance-square,
+.fa-linkedin,
+.fa-instagram {
+  color: #d03b40;
+  margin-right: 15px;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #241d1b;
+  padding: 3rem;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.inner-footer {
+  width: 100%;
+  margin: 0 auto;
+  color: #f5f0ed;
+}
+
+.inner-footer img {
+  margin-left: 7px;
+  margin-right: 15px;
+}
+
+.inner-footer img:hover,
+a:hover {
+  opacity: 0.4;
+}
+
+/* JS Mobile Responsive: cuando la pantalla tenga 599px o menos */
+@media screen and (max-width: 599px) {
+  .js .navegacion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    position: absolute;
+    top: 43px;
+    left: 30px;
+    right: 30px;
+    background-color: #2d211f;
+  }
+
+  .js .navegacion a {
+    padding: 5px 10px;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .js .navegacion.menu-desplegado {
+    max-height: 200px;
+  }
+}
+
+/* Desktop Responsive: cuando la pantalla tenga 600px o más */
+@media screen and (min-width: 600px) {
+  /* Estilos Logo */
+  .logo img {
+    max-width: 300px;
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+
+  /* Estilos Menú */
+  .lanzador-menu {
+    display: none;
+  }
+
+  .navegacion {
+    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .navegacion li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .navegacion a {
+    display: block;
+    text-decoration: none;
+    color: #f5f0ed;
+    background-color: transparent;
+  }
+
+  .navegacion ul {
+    text-align: right;
+  }
+
+  /* Estilos Header - El Espacio */
+  .header-navegacion p,
+  .ofertas p {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 35em;
+    margin-right: 35em;
+  }
+
+  /* Estilos Productos */
+  .productos-doscolumnas,
+  .contacto-doscolumnas {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+  }
+
+  .productos-doscolumnas p,
+  .contacto-doscolumnas p {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+  /* Estilos Reservas */
+  .reservas-grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item {
+    padding: 50px;
+    text-align: left;
+  }
+
+  .grid-item-imagen {
+    float: left;
+    padding-right: 1rem;
+  }
+
+  .grid-item-imagen img {
+    vertical-align: text-top;
+  }
+
+  .grid-item-texto {
+    padding-left: 170px;
+    padding-top: 0px;
+  }
+
+  /* Estilos Footer */
+  .fa-behance-square,
+  .fa-linkedin,
+  .fa-instagram {
+    margin-right: 30px;
+  }
+
+  .inner-footer img {
+    margin-right: 50px;
+  }
+
+  .inner-footer {
+    width: 95%;
+  }
+}
